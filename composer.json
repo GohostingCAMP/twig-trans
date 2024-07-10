@@ -1,0 +1,50 @@
+{
+    "name": "gohosting/twig-trans",
+    "type": "library",
+    "description": "Twig 3 translation extension ",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "twig",
+        "trans",
+        "translation",
+        "endtrans",
+        "po file",
+        "i18n"
+    ],
+    "authors": [
+        {
+            "name": "Martin Hansen",
+            "email": "mh@goh.dk"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-gettext": "*",
+        "ext-mbstring": "*",
+        "twig/twig": ">=3.10.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "phpunit/phpunit": "^7 || ^8 || ^9 || ^10 || ^11",
+        "vimeo/psalm": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "gohosting\\": "src/gohosting"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "gohosting\\": "tests/"
+        }
+    },
+    "config": {
+        "classmap-authoritative": true
+    },
+    "scripts": {
+        "php_src": "phpcs --standard=phpcs.xml -s -p --colors ./src/",
+        "php_test": "phpcs --standard=phpcs.xml -s -p --colors ./tests/",
+        "phpunit": "phpunit ./tests/"
+    }
+}
