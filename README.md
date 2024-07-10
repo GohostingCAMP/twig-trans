@@ -1,7 +1,5 @@
 # Twig Trans
 
-[![Latest Version](https://img.shields.io/github/release/JBlond/twig-trans.svg?style=flat-square&label=Release)](https://github.com/JBlond/twig-trans/releases) 
-[![Packagist Installs](https://badgen.net/packagist/dt/jblond/twig-trans)](https://packagist.org/packages/jblond/twig-trans)
 
 ## Introduction
 
@@ -15,7 +13,7 @@ This extension enables Twig templates to use `|trans` and `{% trans %}` + `{% en
 ## Install
 
 ```shell
-composer require jblond/twig-trans
+composer require gohosting/twig-trans
 ```
 
 ## Example Use
@@ -23,7 +21,7 @@ composer require jblond/twig-trans
 ```PHP
 <?php
 
-use jblond\TwigTrans\Translation;
+use gohosting\TwigTrans\Translation;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 use Twig\TwigFilter;
@@ -101,7 +99,3 @@ composer run-script php_src
 composer run-script php_test
 composer run-script phpunit
 ```
-
-## Contribution, wishes and bug
-
-Raise an [issue](https://github.com/JBlond/twig-trans/issues)
